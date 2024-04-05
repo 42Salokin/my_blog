@@ -2,7 +2,7 @@
     margin: 0;
 }
 html {
-    background-color: aqua;
+    background-color: #ffffce;
 }
 
 header {
@@ -21,6 +21,24 @@ main {
     border-right: 4px solid black;
     width: 50%;
     height: 796px;
+}
+
+.left article {
+    margin: auto;
+    margin-top: 50px;
+    background-color: yellow;
+    width: 70%;
+    height: 40%;
+    border: 1px solid yellow;
+    border-radius: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left article span {
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .right {
