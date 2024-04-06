@@ -1,8 +1,9 @@
 * {
     margin: 0;
 }
+
 html {
-    background-color: #ffffce;
+    background-color: #edffce;
 }
 
 header {
@@ -26,7 +27,7 @@ main {
 .left article {
     margin: auto;
     margin-top: 50px;
-    background-color: yellow;
+    background-image: linear-gradient(yellow, #cc7606);
     width: 70%;
     height: 40%;
     border: 1px solid yellow;
@@ -35,6 +36,9 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+/*     background-image: linear-gradient(yellow, #2e1dcd);
+ */
 
 .left article span {
     font-size: xx-large;
@@ -83,5 +87,5 @@ main {
 }
 
 #submit {
-    background-color: #efd216;
+    background-image: linear-gradient(to right, #cc7606, yellow);
 }
