@@ -49,3 +49,39 @@ main {
     height: 796px;
     margin-left: 4px;
 }
+
+.right div {
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right div h1 {
+    margin-bottom: 20px;
+}
+
+#form {
+    width: 100%;
+}
+
+#form input, #submit {
+    width: 100%;
+    margin: 4px;
+}
+
+#userName, #title, #submit {
+    line-height: 30px;
+}
+
+#content {
+    line-height: 100px;
+}
+
+#submit {
+    background-color: #efd216;
+}
