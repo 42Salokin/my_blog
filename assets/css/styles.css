@@ -14,6 +14,13 @@
     border-bottom: 4px solid white;   
 }
 
+.light header span {
+    color: #cc7606;
+}
+
+.dark header span {
+    color: #bedef8;
+}
 .light main .left {
     border-top: 4px solid black;
     border-right: 4px solid black;
@@ -24,20 +31,68 @@
     border-right: 4px solid white;
 }
 
+.light main .left article {
+    background-image: linear-gradient(yellow, #cc7606);
+    border: 1px outset #cc7606;
+}
+
+.dark main .left article {
+    background-image: linear-gradient(white, #bedef8, #5656ee);
+    border: 1px outset #5656ee;
+}
 .light main .right {
     border-top: 4px solid black;
     border-left: 4px solid black;
+    color: black;
 }
 
 .dark main .right {
     border-top: 4px solid white;
     border-left: 4px solid white;
+    color: white;
+}
+
+.light main .right div form input {
+    border: 3px outset #cc7606;
+}
+
+.dark main .right div form input {
+    border: 3px outset #5656ee;
+}
+
+
+.light main .right div form button {
+    border: 3px outset #cc7606;
+    background-image: linear-gradient(to right, #cc7606, yellow);
+}
+
+.dark main .right div form button {
+    border: 3px outset #5656ee;
+    background-image: linear-gradient(to right, white, #bedef8, #5656ee);
 }
 
 .light footer {
     border-top: 4px solid black;
+    color: black;
 }
 
 .dark footer {
     border-top: 4px solid white;
+    color: white;
+}
+
+.light footer h3 {
+    text-shadow: 1px 1px #cc7606;
+}
+
+.dark footer h3 {
+    text-shadow: 1px 1px #5656ee;
+}
+
+.light footer a {
+    color: #cc7606;
+}
+
+.dark footer a {
+    color: #bedef8;
 }
