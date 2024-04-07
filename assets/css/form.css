@@ -21,17 +21,18 @@ main {
     border-top: 4px solid black;
     border-right: 4px solid black;
     width: 50%;
-    height: 796px;
+    height: 550px;
 }
 
 .left article {
     margin: auto;
     margin-top: 50px;
     background-image: linear-gradient(yellow, #cc7606);
-    width: 70%;
-    height: 40%;
+    max-width: 350px;
+    height: 350px;
     border: 1px outset #cc7606;
-    border-radius: 160px;
+    border-radius: 50%;
+    shape-outside: circle(50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +40,6 @@ main {
 
 .left article span {
     font-size: xx-large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .right {
@@ -47,7 +47,7 @@ main {
     border-top: 4px solid black;
     border-left: 4px solid black;
     width: 50%;
-    height: 796px;
+    height: 550px;
     margin-left: 4px;
 }
 
@@ -55,7 +55,7 @@ main {
     margin: auto;
     margin-top: 50px;
     width: 80%;
-    height: 40%;
+    height: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,4 +86,41 @@ main {
 
 #submit {
     background-image: linear-gradient(to right, #cc7606, yellow);
+}
+
+footer {
+    border-top: 4px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+footer h3 {
+    margin: 10px;
+    text-shadow: 1px 1px #cc7606;
+    text-align: center;
+}
+
+footer a {
+    margin-bottom: 10px;
+    width: 100%;
+    color: #cc7606;
+    text-align: center;
+}
+
+@media screen and (max-width: 735px) {
+    .left article {
+        max-width: 250px;
+        height: 250px;
+    }    
+}
+
+@media screen and (max-width: 500px) {
+    .left article {
+        max-width: 200px;
+        height: 200px;
+    }
+
+    .left article span {
+        font-size: medium;
+    }
 }
