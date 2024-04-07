@@ -1,0 +1,43 @@
+.light {
+    background-color: #edffce;
+}
+
+.dark {
+    background-color: #243447;
+}
+
+.light header {
+    border-bottom: 4px solid black;
+}
+
+.dark header {
+    border-bottom: 4px solid white;   
+}
+
+.light main .left {
+    border-top: 4px solid black;
+    border-right: 4px solid black;
+}
+
+.dark main .left {
+    border-top: 4px solid white;
+    border-right: 4px solid white;
+}
+
+.light main .right {
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+}
+
+.dark main .right {
+    border-top: 4px solid white;
+    border-left: 4px solid white;
+}
+
+.light footer {
+    border-top: 4px solid black;
+}
+
+.dark footer {
+    border-top: 4px solid white;
+}
