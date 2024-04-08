@@ -21,6 +21,7 @@
 .dark header span {
     color: #bedef8;
 }
+
 .light main .left {
     border-top: 4px solid black;
     border-right: 4px solid black;
@@ -29,6 +30,16 @@
 .dark main .left {
     border-top: 4px solid white;
     border-right: 4px solid white;
+}
+
+.light .page2 {
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+
+.dark .page2 {
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
 }
 
 .light main .left article {
@@ -60,7 +71,6 @@
     border: 3px outset #5656ee;
 }
 
-
 .light main .right div form button {
     border: 3px outset #cc7606;
     background-image: linear-gradient(to right, #cc7606, yellow);
@@ -69,6 +79,24 @@
 .dark main .right div form button {
     border: 3px outset #5656ee;
     background-image: linear-gradient(to right, white, #bedef8, #5656ee);
+}
+
+.light main .boxes {
+    border: 3px outset #cc7606;
+    color: black;
+}
+
+.dark main .boxes {
+    border: 3px outset #5656ee;
+    color: white;
+}
+
+.light main .boxes h2 {
+    border-bottom: 2px outset #cc7606;
+}
+
+.dark main .boxes h2 {
+    border-bottom: 2px outset #5656ee;
 }
 
 .light footer {
