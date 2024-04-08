@@ -11,5 +11,27 @@ submit.addEventListener('click', function (event) {
         title: title.value,
         content: content.value,
     }
+    if (blogEntry.userName === null) {
+        document.querySelector('.message').textContent = `Please fill out each box`;
+    }
     localStorage.setItem('blogEntry', JSON.stringify(blogEntry));
+    confirmMessage();
 })
+
+function confirmMessage() {
+    const lastEntry = JSON.parse(localStorage.getItem('blogEntry'));
+    if (lastEntry !== null) {
+        document.querySelector('.message').textContent = `Entry "${lastEntry.title}" received`
+        setTimeout(newPage, 2000)
+    } 
+}
+
+function newPage() {
+    location.assign("other page");
+    const lastEntry = JSON.parse(localStorage.getItem('blogEntry'));
+    if (lastEntry !== null) {
+      document.getElementById('box1h2').innerHTML = blogEntry.title;
+      document.getElementById('box1p').innerHTML = blogEntry.content;
+      document.getElementById('box1art').innerHTML = blogEntry.userName;
+    }
+}
