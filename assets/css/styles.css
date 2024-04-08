@@ -63,11 +63,13 @@
     color: white;
 }
 
-.light main .right div form input {
+.light main .right div form input,
+.light main .right div form textarea {
     border: 3px outset #cc7606;
 }
 
-.dark main .right div form input {
+.dark main .right div form input,
+.dark main .right div form textarea {
     border: 3px outset #5656ee;
 }
 
@@ -79,6 +81,14 @@
 .dark main .right div form button {
     border: 3px outset #5656ee;
     background-image: linear-gradient(to right, white, #bedef8, #5656ee);
+}
+
+.light main .right .message {
+    background-image: linear-gradient(to right, #cc7606, yellow);
+}
+
+.dark main .right .message {
+    background-image: linear-gradient(to right, white, #bedef8, #5656ee);    
 }
 
 .light main .boxes {

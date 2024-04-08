@@ -51,6 +51,7 @@ main {
 .right div {
     margin: auto;
     margin-top: 50px;
+    margin-bottom: 40px;
     width: 80%;
     height: 65%;
     display: flex;
@@ -60,14 +61,14 @@ main {
 }
 
 .right div h1 {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #form {
     width: 100%;
 }
 
-#form input, #submit {
+#form input, #content, #submit {
     width: 100%;
     margin: 4px;
 }
@@ -77,7 +78,13 @@ main {
 }
 
 #content {
-    line-height: 100px;
+    height: 100px;
+}
+
+.message {
+    margin: auto;
+    width: 50%;
+    text-align: center;
 }
 
 footer {
