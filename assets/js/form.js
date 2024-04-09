@@ -20,18 +20,13 @@ submit.addEventListener('click', function (event) {
 
 function confirmMessage() {
     const lastEntry = JSON.parse(localStorage.getItem('blogEntry'));
+    console.log(lastEntry);
     if (lastEntry !== null) {
-        document.querySelector('.message').textContent = `Entry "${lastEntry.title}" received`
-        setTimeout(newPage, 2000)
+        document.querySelector('.message').textContent = `Entry "${lastEntry.title}" received`;
+        setTimeout(newPage, 2000);
     } 
 }
 
 function newPage() {
-    location.assign("other page");
-    const lastEntry = JSON.parse(localStorage.getItem('blogEntry'));
-    if (lastEntry !== null) {
-      document.getElementById('box1h2').innerHTML = blogEntry.title;
-      document.getElementById('box1p').innerHTML = blogEntry.content;
-      document.getElementById('box1art').innerHTML = blogEntry.userName;
-    }
+    window.open("blog.html", "_self");
 }
