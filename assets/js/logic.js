@@ -2,7 +2,6 @@ let themeChange = document.querySelector('.themeChange');
 const container = document.querySelector('.container');
 const label = document.querySelector('#label');
 let mode = 'light';
-console.log("test");
 
 themeChange.addEventListener('click', function () {
     if (mode === 'light') {

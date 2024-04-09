@@ -5,18 +5,19 @@ const submit = document.querySelector('#submit');
 
 submit.addEventListener('click', function (event) {
     event.preventDefault();
-
     const blogEntry = {
         userName: userName.value,
         title: title.value,
         content: content.value,
-    }
-    if (blogEntry.userName === null) {
+    }    
+    if ((blogEntry.userName == null || blogEntry.userName == "") && (blogEntry.title == null || blogEntry.title == "") && (blogEntry.content == null || blogEntry.content == "")) {
         document.querySelector('.message').textContent = `Please fill out each box`;
+    } else {
+        localStorage.setItem('blogEntry', JSON.stringify(blogEntry));
+        confirmMessage();
     }
-    localStorage.setItem('blogEntry', JSON.stringify(blogEntry));
-    confirmMessage();
 })
+
 
 function confirmMessage() {
     const lastEntry = JSON.parse(localStorage.getItem('blogEntry'));

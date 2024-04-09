@@ -10,9 +10,19 @@ header {
     align-items: center;
 }
 
-header span {
+#label {
     font-size: large; 
     margin-right: 10px;
+}
+
+#back {
+    font-size: large;
+    margin-left: 20px;
+    padding: 1px;
+}
+
+#back:hover {
+    cursor: pointer;
 }
 
 main {
@@ -21,13 +31,13 @@ main {
     padding: 10px;
 }
 
-main div {
+.boxes {
     margin: 8px 2px;
     height: 100px;
     position: relative;
 }
 
-main div article {
+.boxes h2 {
     position: absolute;
     bottom: 0px;
 }

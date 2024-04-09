@@ -6,6 +6,10 @@
     background-color: #243447;
 }
 
+.themeChange:hover {
+    cursor: pointer;
+}
+
 .light header {
     border-bottom: 4px solid black;
 }
@@ -20,6 +24,18 @@
 
 .dark header span {
     color: #bedef8;
+}
+
+.light #back {
+    background-image: linear-gradient(yellow, #cc7606);
+    border: 1px outset #cc7606;  
+    color: black;  
+}
+
+.dark #back {
+    background-image: linear-gradient(white, #bedef8, #5656ee);
+    border: 1px outset #5656ee;
+    color: black;    
 }
 
 .light main .left {
@@ -101,11 +117,11 @@
     color: white;
 }
 
-.light main .boxes h2 {
+.light main .boxes h1 {
     border-bottom: 2px outset #cc7606;
 }
 
-.dark main .boxes h2 {
+.dark main .boxes h1 {
     border-bottom: 2px outset #5656ee;
 }
 
