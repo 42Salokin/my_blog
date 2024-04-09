@@ -10,7 +10,7 @@ submit.addEventListener('click', function (event) {
         title: title.value,
         content: content.value,
     }    
-    if ((blogEntry.userName == null || blogEntry.userName == "") && (blogEntry.title == null || blogEntry.title == "") && (blogEntry.content == null || blogEntry.content == "")) {
+    if ((blogEntry.userName == null || blogEntry.userName == "") || (blogEntry.title == null || blogEntry.title == "") || (blogEntry.content == null || blogEntry.content == "")) {
         document.querySelector('.message').textContent = `Please fill out each box`;
     } else {
         localStorage.setItem('blogEntry', JSON.stringify(blogEntry));
