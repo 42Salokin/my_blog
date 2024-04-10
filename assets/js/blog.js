@@ -43,5 +43,5 @@ const main = document.querySelector('.page2');
 newEntry();
 
 back.addEventListener('click', function() {
-  window.open("https://42salokin.github.io/my_blog/", "_self")
+  window.open("index.html", "_self")
 })
