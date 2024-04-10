@@ -1,12 +1,13 @@
 const back = document.querySelector('#back');
+const main = document.querySelector('.page2');
 
 const newEntry = function() {
 const lastPost = localStorage.getItem('blogEntry');
 const lastEntry = JSON.parse(lastPost) || [];
 console.log(lastEntry);
-const main = document.querySelector('.page2');
 
 // for (i = 0; i < lastEntry.length; i++) {
+
   console.log("for loop");
   let boxDiv = document.createElement('div');
   let titleH1 = document.createElement('h1');
@@ -41,7 +42,7 @@ const main = document.querySelector('.page2');
 }
 
 newEntry();
-
+// when the back button is clicked, this reloads the first page in the same tab
 back.addEventListener('click', function() {
   window.open("index.html", "_self")
 })
