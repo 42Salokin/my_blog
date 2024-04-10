@@ -6,6 +6,8 @@ const submit = document.querySelector('#submit');
 // when submit button is clicked, it puts the three input values into an object
 submit.addEventListener('click', function (event) {
     event.preventDefault();
+    const pastBlogs = localStorage.getItem('blogsArray');
+    const blogsArray = JSON.parse(pastBlogs) || [];
     const blogEntry = {
         userName: userName.value,
         title: title.value,
@@ -19,17 +21,18 @@ submit.addEventListener('click', function (event) {
         }, 2000)
     } else {
         // otherwise, it turns the object into a string and sends it to local storage
-        localStorage.setItem('blogEntry', JSON.stringify(blogEntry));
+        blogsArray.push(blogEntry);
+        localStorage.setItem('blogsArray', JSON.stringify(blogsArray));
         confirmMessage();
     }
 })
 
 // then it pulls the string out of local storage, turns it back into an object, and displays a message confirming the entry with the entry title
 function confirmMessage() {
-    const lastEntry = JSON.parse(localStorage.getItem('blogEntry'));
+    const lastEntry = JSON.parse(localStorage.getItem('blogsArray'));
     console.log(lastEntry);
     if (lastEntry !== null) {
-        document.querySelector('.message').textContent = `Entry "${lastEntry.title}" received`;
+        document.querySelector('.message').textContent = `Entry "${lastEntry[lastEntry.length - 1].title}" received`;
         setTimeout(newPage, 2000);
     } 
 }
