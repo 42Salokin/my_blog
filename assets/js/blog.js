@@ -1,16 +1,17 @@
-const main = document.querySelector('.page2');
 const back = document.querySelector('#back');
 
-function newEntry() {
-const lastEntry = JSON.parse(localStorage.getItem('blogEntry'));
+const newEntry = function() {
+const lastPost = localStorage.getItem('blogEntry');
+const lastEntry = JSON.parse(lastPost) || [];
 console.log(lastEntry);
+const main = document.querySelector('.page2');
 
-// for(let i=0;i<lastEntry.length;i++){
-  // console.log("for loop");
-  const boxDiv = document.createElement('div');
-  const titleH1 = document.createElement('h1');
-  const contentP = document.createElement('p');
-  const userH2 = document.createElement('h2');
+// for (i = 0; i < lastEntry.length; i++) {
+  console.log("for loop");
+  let boxDiv = document.createElement('div');
+  let titleH1 = document.createElement('h1');
+  let contentP = document.createElement('p');
+  let userH2 = document.createElement('h2');
 
   titleH1.textContent = lastEntry.title;
   console.log(lastEntry.title);
@@ -19,7 +20,17 @@ console.log(lastEntry);
   userH2.textContent = lastEntry.userName;
   console.log(lastEntry.userName);
 
+  // titleH1.textContent = lastEntry[i].title;
+  // console.log(lastEntry[i].title);
+  // contentP.textContent = lastEntry[i].content;
+  // console.log(lastEntry[i].content);
+  // userH2.textContent = lastEntry[i].userName;
+  // console.log(lastEntry[i].userName);
+
   boxDiv.setAttribute('class', 'boxes');
+  titleH1.setAttribute('class', 'title');
+  contentP.setAttribute('class', 'content');
+  userH2.setAttribute('class', 'user');
 
   main.appendChild(boxDiv);
   boxDiv.appendChild(titleH1);

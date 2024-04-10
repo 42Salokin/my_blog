@@ -30,4 +30,7 @@ function confirmMessage() {
 
 function newPage() {
     window.open("blog.html", "_self");
+    userName.textContent = '';
+    content.textContent = '';
+    title.textContent = '';
 }
