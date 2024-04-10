@@ -12,6 +12,9 @@ submit.addEventListener('click', function (event) {
     }    
     if ((blogEntry.userName == null || blogEntry.userName == "") || (blogEntry.title == null || blogEntry.title == "") || (blogEntry.content == null || blogEntry.content == "")) {
         document.querySelector('.message').textContent = `Please fill out each box`;
+        setTimeout(function() {
+            document.querySelector('.message').textContent = '';
+        }, 2000)
     } else {
         localStorage.setItem('blogEntry', JSON.stringify(blogEntry));
         confirmMessage();
